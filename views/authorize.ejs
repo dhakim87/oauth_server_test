@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=email], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0px;
+	display: inline-block;
+	border: 1px solid #c0c0c0
+	box-sizing: border-box;
+}
+
+button {
+	width: 100%;
+	background-color: #33cc33;
+	color: #ffffff;
+	padding: 12px 12px;
+	margin: 8px 0px;
+	border: none
+	cursor: pointer;
+}
+
+button:hover{
+	opacity: 0.8;
+}
+
+</style>
+</head>
+<body>
+<h2>Authorization Request</h2>
+<h4>The Client ID Is:<%=client_id%></h4>
+<h4>The redirect uri Is:<%=redirect_uri%></h4>
+
+<form method="post">
+	<div>
+		<button type="submit">Allow</button>
+	</div>
+</form>
+</body>
+</html>
